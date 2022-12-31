@@ -1,0 +1,80 @@
+.table__container--main{
+    display: flex;
+    flex-direction: column;
+}
+
+.table__container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.table__main{
+    width: 100%;
+    border-spacing: 0 1rem ;
+    border-collapse: separate;
+}
+
+.table__head{
+    color: #f38354;
+}
+
+.table__head-item{
+    padding: .75rem 0;
+    border-bottom: 1px #f38354 solid;
+}
+
+.table__head-item:first-child{
+    min-width: 30%;
+}
+
+.paciente{
+    background-color: var(--texto-principal);
+    color: var(--azul-principal);
+}
+
+.paciente:nth-child(2n){
+    background-color: #f38354;
+    color: var(--texto-principal);
+}
+
+.table__body-item{
+    text-align: center;
+    padding: .4rem 0;
+}
+
+.table__body-item:first-child{
+    text-align: left;
+    padding-left: 1rem;
+}
+
+@media (max-width: 475px) {
+    .wrap{
+        max-width: 425px;
+        overflow-x: scroll;
+    }
+
+    ::-webkit-scrollbar{
+        width: 1px;
+        height: .3rem;
+        scroll-behavior: smooth;
+    }
+
+    ::-webkit-scrollbar-thumb{
+        background-color: var(--azul-principal);
+        border-radius: 40px;
+    }
+
+    .table__container{
+        min-width: 768px;
+    }
+
+    .table__head-item:first-child{
+        text-align: center;
+    }
+
+    .table__body-item:first-child{
+        text-align: center;
+    }
+}

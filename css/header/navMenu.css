@@ -1,0 +1,27 @@
+.nav__menu{
+    display: flex;
+    background-color: var(--azul-principal);
+    color: #6f2b22;
+    padding-bottom: .25rem;
+}
+
+.nav__item{
+    padding: .75rem;
+    margin-right: .75rem ;
+    cursor: pointer;
+}
+
+.nav__item:hover{
+    border-bottom: 2px var(--texto-principal) solid; 
+}
+
+.aba_ativa{
+    color: var(--texto-principal);
+    border-bottom: 2px var(--texto-principal) solid; 
+}
+
+@media (max-width: 425px) {
+    .nav__menu{
+        justify-content: center;
+    }
+}

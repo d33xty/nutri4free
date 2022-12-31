@@ -1,0 +1,65 @@
+.form__container{
+    display: flex;
+    justify-content: center;
+    margin: 3rem 0;
+    
+}
+
+#form-adiciona{
+    width: 30%;
+    background-color: var(--texto-principal);
+    border-radius: 1rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+}
+
+.grupo{
+    display: flex;
+    flex-direction: column;
+    margin: .5rem 0;
+}
+
+input{
+    padding: .3rem;
+    box-shadow: 0 0 0 0;
+    border: 1px #f38354 solid;
+    outline: 0;
+}
+
+input::placeholder{
+    color:  #977672 ;
+}
+
+input:focus, input:focus, input:focus, input:hover {
+    box-shadow: 0 0 0 0;
+    outline: 0;
+} 
+
+label{
+    color: #6f2b22;
+}
+
+#adicionar-paciente{
+    padding: .3rem;
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+    background-color: var(--azul-principal);
+    color: var(--texto-principal);
+    border-radius: .5rem;
+    align-self: center;
+}
+
+@media (max-width: 768px) {
+    #form-adiciona{
+        width: 50%;
+    }
+}
+@media (max-width: 425px) {
+    #form-adiciona{
+        width: 70%;
+    }
+}
+
